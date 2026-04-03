@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'helvetica neue', Arial, sans-serif;
 }
 
 html, body {
@@ -25,19 +25,23 @@ main
 section{
     height: 100%;
     width: 350px;
-    background-color: crimson;
     border-radius: 10px;
     margin: auto;
+     overflow : auto;
     
 }
 .all_reel{
-
     height: 100%;
-    width: 100%;
+    width: 100%;   
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 
-    overflow: hidden;
 
-    
+}
+
+.all_reel::-webkit-scrollbar{
+    display: none;
 }
 
 .reel {
@@ -47,11 +51,16 @@ section{
     background-color: blueviolet;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 20px ;
+
+    scroll-snap-align: start ;
+    scroll-snap-stop: always;
 }
-.reel img {
+.reel video {
 
     height: 100%;
     width: 100%;
+    object-fit: cover;
     
 }
 
@@ -82,13 +91,76 @@ section{
 }
 
 .bottom .user  button {
+    font-size: 12px;
+    font-weight: 500;
 
-    padding: 0px 10px;
+    padding: 3px 6px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px;
 }
 
-.bottom h3{
+.bottom .user  button:active{
+
+    background-color: rgb(0, 146, 204);
+}
+
+
+.bottom>h3{
 
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 
+}
+
+.bottom .user h4 {
+    font-weight: 500;
+    font-size: 15px
+}
+
+.right{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+
+    width: 40px;
+    right: 0;
+    position: absolute;
+    bottom: 12%;
+
+    /* transform: translateX(100%); */
+
+
+}
+
+.right i {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.right h6 {
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.right>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right h4 {
+    cursor: pointer;
+}
+
+.dil {
+
+    color: red;
 }
