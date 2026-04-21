@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+:root 
+{
+       --red : red ;
+
+       --x : 200px;
+       --y : 200px ;
+
+}
+
+
+video {
+      
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* important */
+      z-index: -1;
+    }
+       /* .box1
+       {
+              height: 100%;
+              width: 100% ;
+              position: absolute;
+
+
+              background: radial-gradient( 150px at   var(--x )  var(--y)   , rgba(0, 255, 17, 0) , rgba(0, 0, 0, 0.909));
+       
+       } */
