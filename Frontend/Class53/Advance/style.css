@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+body {
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: black;
+
+
+}
+
+.box
+{
+       height: 200px;
+       width: 400px;
+       background-color: white;
+       animation: changeBackgroundcolor 5s  5 forwards  alternate;
+       /* box-shadow: 5px  5px 1px red; */
+}
+
+
+@keyframes changeBackgroundcolor{
+       from   {
+              background-color: #000dff;
+              border-radius: 10px;
+              scale: 1;
+
+
+       }
+
+       to
+       {
+              background-color:rgb(255, 255, 0);
+              border-radius: 30px;
+              scale: 0.5;
+
+
+       }
+
+}
+
