@@ -1,0 +1,21 @@
+// object oreinted programming 
+
+// inheritance  polymorphism encapsulation  abstraction 
+
+// jab cod e chota hota hai tb aaap kuch kr saktte ho 
+// bina pattern ke guideline follow  liyee 
+// jb code bada hota hai to tb rule me guidelines
+
+
+// modular and divided into the multiple part convert it into
+
+// modular
+// scalable 
+//manageble
+// easy to undertand using 
+grtgogi
+
+understanding and classes in the javascript
+
+
+constrctor automatic chalene wala
