@@ -1,36 +1,33 @@
 ////////////////////////////////////////////////////////////////
 //     
-//     Function name :    bootle        
+//     Function name :    NO      
 //     Input :                       No
 //     Output :                    String
-//     Description :            Perform Demostration of class and Object
+//     Description :            Perform Demostration this keyword
 //     Date :                        09/05/2026
 //     Author                       Sahil Latif Shaikh
 //
 //
 ////////////////////////////////////////////////////////////////
-class bottle
-{
-       constructor()                                                  // constructor
+
+
+///////////////////////////////////////////////////////////////
+//
+//  create function inside the object
+//
+/////////////////////////////////////////////////////////////
+
+
+let obj  =
+{ 
+
+       func : function()
        {
-              this.color = "blue";
-              this.price = 25 ; 
-              this.metal = "steel";
-
+              console.log(this);
+              
        }
+};
 
-       panipeoo(){};                                                 // Method 1 treated as a prototype
-       bottleuthao (){};                                            // Method2 treated as a prototype
-       
-}
+obj.func();
 
 
-////////////////////////////////////////////////////////////////
-//
-//     Creating the Object 
-//
-////////////////////////////////////////////////////////////////
-
-
- let bottle1 = new bottle();                                   //  Create object bottle1
- let bottle2 = new bottle();                                  //  Create object bottle2
